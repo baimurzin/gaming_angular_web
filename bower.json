@@ -1,0 +1,9 @@
+{
+  "name": "iccup_web",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-bootstrap": "~0.13.3"
+  }
+}

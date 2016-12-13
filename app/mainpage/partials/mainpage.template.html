@@ -1,0 +1,24 @@
+<label>Search line: <input type="text" ng-model="main.filter.searchString"/></label>
+<br>
+<label>
+    Statuses:
+    <select ng-options="status for status in main.static.statuses" ng-model="main.filter.status"></select>
+    <br>
+</label>
+<label>
+    Categories:
+    <select ng-options="category as category.name for category in main.static.categories track by category.id" ng-model="main.filter.category"></select>
+    <br>
+</label>
+<label>
+    Locations:
+    <select ng-options="location as location.name for location in main.static.locations track by location.id" ng-model="main.filter.location"></select>
+    <br>
+</label>
+
+<label ng-click="main.filter.sortEnum='DATE'">по дате добавления</label>
+<label ng-click="main.filter.sortEnum='VOTE'">по популярности</label>
+
+<button ng-click="main.doSearch()">Search</button>
+
+{{main.filter}}

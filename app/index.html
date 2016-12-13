@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="iccup">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ICCup</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.css" rel="stylesheet"/>-->
+    <link href="vendor/css/style.css" rel="stylesheet"/>
+    <link href="vendor/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet">
+
+</head>
+<body ng-controller="AppController as app">
+<div ng-include="'/header/partials/header.view.html'"></div>
+<div ng-view></div>
+
+<!--libs-->
+<script src="/vendor/jquery/jquery-2.1.1.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/vendor/angular/angular.min.js"></script>
+<script src="/vendor/angular/angular-route.min.js"></script>
+<script src="/vendor/angular/angular-local-storage.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!--.js-->
+<script src="/app.js"></script>
+<script src="vendor/js/main.js"></script>
+
+<!--Core-->
+<script src="/core/core.module.js"></script>
+<script src="/core/core.routes.js"></script>
+<script src="/core/core.config.js"></script>
+<script src="/core/core.api.service.js"></script>
+<script src="/core/core.app.controller.js"></script>
+<script src="/core/core.const.js"></script>
+<script src="/core/core.run.js"></script>
+
+<!-- Auth -->
+<script src="/auth/auth.module.js"></script>
+<script src="/auth/auth.config.js"></script>
+<script src="/auth/auth.routes.js"></script>
+<script src="/auth/auth.authInfo.service.js"></script>
+<script src="/auth/auth.interceptor.service.js"></script>
+<script src="/auth/auth.login.controller.js"></script>
+
+<!-- User -->
+<script src="/user/user.module.js"></script>
+<script src="/user/user.api.service.js"></script>
+
+<!-- Main Page-->
+<script src="/mainpage/mainpage.module.js"></script>
+<script src="/mainpage/mainpage.routes.js"></script>
+<script src="/mainpage/mainpage.controller.js"></script>
+
+<!-- Header -->
+<script src="/header/header.module.js"></script>
+<script src="/header/header.controller.js"></script>
+<script src="/header/header.manager.service.js"></script>
+
+<!--Util-->
+<script src="util/util.module.js"></script>
+<script src="util/util.service.js"></script>
+
+<!--&lt;!&ndash; Complaints &ndash;&gt;-->
+<!--<script src="/complaints/complaint.module.js"></script>-->
+<!--<script src="/complaints/complaint.api.js"></script>-->
+<!--<script src="/complaints/complaint.static.js"></script>-->
+
+</body>
+</html>
